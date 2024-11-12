@@ -16,7 +16,7 @@ protected:
   uint64_t capacity_;
   uint64_t bytes_pushed_ {}; // 已写入的字节数
   uint64_t bytes_popped_ {}; // 已弹出的字节数
-   bool error_{}; // 错误状态标志，初始为 false
+  bool error_{}; // 错误状态标志，初始为 false
 
   unsigned char flag {};	// 0: normal, 1: closed, 2: error
   std::queue<std::string> buffer_data {};
